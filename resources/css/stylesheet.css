@@ -1,0 +1,440 @@
+html {
+    font-size: 8px;
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+   /* Remove default button styles */
+   all: unset;
+   
+   /* Reset for better cross-browser consistency */
+   display: inline-block; /* or inline-flex if needed */
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   border: none;
+   background: none;
+   color: inherit;
+   font: inherit;
+   text-align: inherit;
+   text-decoration: none;
+   cursor: pointer;
+   outline: none;
+}
+
+a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color from parent */
+  outline: none; /* Remove focus outline */
+  background: none; /* Remove any background */
+  border: none; /* Remove any border */
+  padding: 0; /* Remove any padding */
+  margin: 0; /* Remove any margin */
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+h1 {
+    font-family: "Merriweather";
+    font-size: 19rem;
+    color: #3C3C3C;
+    margin: 0rem auto 3rem;
+}
+
+.hero {
+    display: flex;
+    max-width: 1096px;
+    width: 90%;
+    margin: 5rem auto;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+p.header {
+    font-family: "DM Sans";
+    font-size: 3rem;
+    color: #686868;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    padding: 3rem auto;
+    width: 90%;
+    margin: auto;
+    max-width: 1096px;
+}
+
+
+.navigation {
+    display: flex;
+}
+
+ul {
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+    width: 100%;
+ }
+
+ li {
+    font-family: "DM Sans", sans-serif;
+    font-size: 2rem;
+    margin: 0 2rem;
+    transition: all 0.5s ease;
+    color: #7d7d7d;
+ }
+
+ li:hover {
+   text-decoration: underline;
+   cursor: pointer;
+   color: #2521D8;
+   font-weight: 600;   
+ }
+
+
+
+ .profileimg {
+    width: 25rem;
+    height: 25rem;
+    background-color: #7d7d7d;
+    border-radius: 100%;
+    background-image: url(../imgs/profile_img.jpg);
+    background-position: center;
+    background-size: cover;
+ }
+
+
+ .contact_bttn {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: color 0.3s ease-in-out;
+ }
+
+
+ #circulartxt {
+   margin-top: -25%;
+   border-radius: 100%;
+   float: right;
+   font-family: "Merriweather";
+   font-size: 1.6rem;
+   color: #ffffff;
+   text-align: center;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   transform: rotate(90deg);
+   background-color: #2521D8;
+   position: absolute;
+   top: -.5rem;
+   left: 50%;
+   transition: background-color 0.5s ease-in-out;
+ }
+
+ #circulartxt:hover{
+  background-color: #2f88e6;
+  cursor: pointer;
+ }
+
+ #circulartxt span {
+    position: absolute;
+    transform-origin: top left;
+    padding-top: .5rem;
+    transition: padding-top 0.5s ease-in-out;
+ }
+
+ #circulartxt:hover span {
+  padding-top: 1rem;
+
+ }
+
+ .divider {
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    color: #dfdfdf;
+    border-width: 1px;
+    width: 90%;
+    margin: auto;
+    max-width: 1096px;
+ }
+
+ .mywork {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem auto;
+    margin-top: 8rem;
+    max-width: 1096px;
+    width: 90%;
+    align-items: flex-start;
+ }
+
+ .eyebrowcontainer {
+    justify-content: start;
+    width: 100%;
+ }
+
+ .eyebrow {
+    font-family: "DM Sans";
+    text-transform: uppercase;
+    color: #686868;
+    font-weight: bold;
+    font-size: 1.6rem;
+    letter-spacing: 1.3px;
+ }
+
+ .work_container {
+    display: flex;
+    margin-top: 4rem;
+    justify-content: space-between;
+    width: 100%;
+ }
+
+ .work_column {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   margin: auto;
+ }
+
+ .description {
+   font-family: "DM Sans", sans-serif;
+   font-size: 2rem;
+   color: #979797;
+   margin-top: .5rem;
+ }
+
+ .card_work {
+   margin-right: 3rem;
+   margin-bottom: 3rem;
+ }
+
+ .link_button {
+   display: flex;
+   font-family: "Merriweather", serif;
+   color: #2521D8;
+   font-size: 2rem;
+   text-decoration: underline;
+   align-items: center;
+   transition: color 0.3s ease-in-out;
+ }
+
+ .icon_bttn{
+   margin-left: 1rem;
+   transition: margin-left 0.3s ease-in-out;
+ }
+
+ .link_button:hover {
+   color: #2f88e6; 
+}
+
+ .link_button:hover .icon_bttn{
+   margin-left: 2rem;
+ }
+
+ .icon_contact {
+   height: 100%;
+   width: 100%;
+   display: flex;
+   position: absolute;
+   z-index: 1;
+   justify-content: center;
+   align-items: center;
+   right: -27.5%;
+   bottom: -10%;
+ }
+
+ #overlay {
+  position: fixed; /* Sit on top of the page content */
+  opacity: 0; /* Fully transparent by default */
+  visibility: hidden; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2521D8; /* Background color without opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  transition: opacity 0.5s, visibility 0.5s; /* Smooth transition for opacity and visibility */
+  padding: 10rem;
+}
+
+#overlay.visible {
+  opacity: 1; /* Fully opaque when visible */
+  visibility: visible; /* Visible when the class 'visible' is added */
+}
+
+
+ .overlay_content{
+  /*margin: 10rem;*/
+  justify-content: center;
+  width: 100;
+  display: flex;
+  flex-direction: column;
+ }
+
+ .overlay_text {
+  font-family: "DM Sans";
+  font-size: 3rem;
+  color: #ffffff;
+  margin-left: 2rem;
+ }
+
+ .overlay_title {
+  font-weight: 800;
+  font-size: 19rem;
+  color: #ffffff;
+  line-height: 95%;
+  width: 100%;
+  font-family: "Merriweather";
+  margin-bottom: 10rem;
+ }
+
+ .linkoverlay {
+  font-weight: 200;
+  text-decoration: underline;
+  cursor: pointer;
+ }
+
+ @media only screen and (min-width: 768px) and (max-width: 1024px) {
+   h1 {
+      font-size: 15rem;
+      margin: 0rem auto 1.5rem;
+      line-height: 95%;
+   }
+
+   p.header {
+      font-size: 2.5rem;
+  }
+
+  .profileimg {
+   width: 20rem;
+   height: 20rem;
+  }
+
+  .icon_contact {
+   right: -20%;
+ }
+
+
+ #circulartxt {
+   margin-top: -25%;
+   top: -1.8rem;
+   left: 35%;
+ }
+
+ #overlay {
+  padding: 8rem;
+}
+
+
+ .overlay_content{
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+ }
+
+ .overlay_text {
+  font-family: "DM Sans";
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-left: 2rem;
+ }
+
+ .overlay_title {
+  font-weight: 800;
+  font-size: 16rem;
+  color: #ffffff;
+  line-height: 95%;
+  width: 80%;
+  font-family: "Merriweather";
+  margin-bottom: 8rem;
+ }
+
+ }
+
+ @media only screen and (min-width: 375px) and (max-width: 768px) {
+
+   .hero {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 90%;
+      margin: 3rem auto;
+      justify-content: center;
+      align-items: flex-start;
+  }
+
+   h1 {
+      font-size: 8rem;
+      margin: 0rem auto 1rem;
+      line-height: 90%;
+   }
+
+
+   p.header {
+      font-size: 2.2rem;
+  }
+
+  .profileimg {
+   width: 18rem;
+   height: 18rem;
+   margin-bottom: 3rem;
+  }
+
+
+ #circulartxt {
+   margin-top: -90%;
+   top: -1.8rem;
+   left: 80%;
+ }
+
+ .icon_contact {
+   top: -11rem;
+   right: -67%;
+ }
+
+ .mywork {
+  margin-top: 4rem;
+}
+
+ .work_container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+#overlay {
+  padding: 4rem;
+}
+
+.overlay_content{
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+ }
+
+.overlay_text {
+  font-family: "DM Sans";
+  font-size: 2rem;
+  color: #ffffff;
+  width: 100%;
+  margin-left: 1rem;
+  margin-right: auto;
+ }
+
+ .overlay_title {
+  font-weight: 800;
+  font-size: 8rem;
+  color: #ffffff;
+  line-height: 95%;
+  width: 95%;
+  font-family: "Merriweather";
+  margin-bottom: 6rem;
+ }
+
+ }

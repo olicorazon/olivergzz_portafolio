@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" href="resources/icons/favico/favicon.ico" type="image/x-icon">
+        <title>OliverGzz - Work </title>
+        <link href="resources/css/stylesheet.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+         <!-- top navigation -->
+        <nav>
+            <div class="navigation">
+                <ul>
+                    <li>About</li>
+                    <li>CV</li>
+                    <li>LinkedIn</li>
+                </ul>
+            </div>
+        </nav>
+        <section class="hero">
+            <div class="header_text">
+                <h1>Hey there!</h1>
+                <p class="header">I'm Oliver González, I've been a product designer since 2014,
+                    so it's safe to say that I've been focused on the past 10 years on UI & UX design.
+                </br>
+                </br>
+                I also have experience in interaction design, motion graphics & ilustration</p>
+            </div>
+            <div class="profileimg_container">
+                <div class="profileimg">
+                </div>
+                <div class="contact_bttn">
+                    <div class="icon_contact"><img src="../codecademy_project/resources/icons/mail_icon.svg"></div>
+                    <div id="circulartxt" onclick="on()">Let's work together! -&nbsp;&nbsp;
+                    </div>
+                    <script>
+                       function on() {
+        var overlay = document.getElementById("overlay");
+        overlay.classList.add("visible");
+    }
+
+    function off() {
+        var overlay = document.getElementById("overlay");
+        overlay.classList.remove("visible");
+    }
+                    </script>
+                    <script src="./resources/js/script_circulartxt.js"></script>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="divider"></section>
+        <section class="mywork">
+            <div class="eyebrow_container">
+                <p class="eyebrow">Here's a selection of my work</p>
+            </div>
+            <div class="work_container">
+                <div class="work_column">
+                 <div class="card_work">
+                    <button class="link_button">
+                        Mi Salud <div class="icon_bttn"><img src="../codecademy_project/resources/icons/arrow_right.svg"></div>
+                    </button>
+                    <p class="description">A telehealth app aimed for the hispanic community living in the US</p>
+                 </div>
+                 <div class="card_work">
+                    <button class="link_button">
+                        Chase Center <div class="icon_bttn"><img src="../codecademy_project/resources/icons/arrow_right.svg"></div>
+                    </button>
+                    <p class="description">A platform for the Chase Center users to put their suites for rent</p>
+                 </div>
+                 <div class="card_work">
+                    <button class="link_button">
+                        Dow Jones <div class="icon_bttn"><img src="../codecademy_project/resources/icons/arrow_right.svg"></div>
+                    </button>
+                    <p class="description">A risk analysis tool to lookout for individuals and know about their background</p>
+                 </div>
+                </div>
+                <div class="work_column">
+                    <div class="card_work">
+                       <button class="link_button">
+                           Eden Center <div class="icon_bttn"><img src="../codecademy_project/resources/icons/arrow_right.svg"></div>
+                       </button>
+                       <p class="description">A medical platform to manage and optimize patients, appointments and results</p>
+                    </div>
+                    <div class="card_work">
+                       <button class="link_button">
+                           Placeholder <div class="icon_bttn"><img src="../codecademy_project/resources/icons/arrow_right.svg"></div>
+                       </button>
+                       <p class="description">A telehealth app aimed for the hispanic community living in the US</p>
+                    </div>
+                    <div class="card_work">
+                       <button class="link_button">
+                           Placeholder 2 <div class="icon_bttn"><img src="../codecademy_project/resources/icons/arrow_right.svg"></div>
+                       </button>
+                       <p class="description">A telehealth app aimed for the hispanic community living in the US</p>
+                    </div>
+                   </div>
+            </div> 
+        </section>
+        <section class="divider"></section>
+
+        <div id="overlay" onclick="off()">
+            <div class="overlay_content">
+                <div class="overlay_title">
+                    Let's work together!
+                </div>
+                <div class="overlay_text">
+                Email me!</br>
+                <a class="linkoverlay" href="mailto:oliveritesm@gmail.com">oliveritesm@gmail.com</a>
+                </br>
+                </br>
+                Or if you're in Mexico, you can give me a call</br>
+                <a class="linkoverlay">+52 81 1468 5269</a>
+                </br>
+                </br>
+                You can always send me a message throughout my <a class="linkoverlay" href="https://www.linkedin.com/in/olivergzz/">LinkedIn</a> profile
+                </div>
+        </div>
+        </div>
+        
+    </body>
+</html>
